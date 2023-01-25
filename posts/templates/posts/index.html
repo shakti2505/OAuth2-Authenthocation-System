@@ -1,0 +1,13 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+{% block content %}
+
+<h1>Home Page </h1>
+{% for post in posts%}
+{{post.title}}
+{{post.user}}
+<img src="{{post.image.url}}" alt="">
+{% endfor%}
+
+{% endblock %}
